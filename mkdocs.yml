@@ -7,14 +7,19 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.snippets
   - pymdownx.emoji
   - pymdownx.magiclink
   - pymdownx.inlinehilite
-  - pymdownx.highlight:
-      use_pygments: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
+  - javascripts/config.js
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css
 
 nav:
   - English:
@@ -27,3 +32,5 @@ nav:
     - Основы : 
       - Установка : ru/Basics/install.md
       - Простая миссия : ru/Basics/simple_mission.md
+  - LCAPI:
+    - Opcodes: LCAPI/opcodes.md

@@ -7,7 +7,7 @@
 Для начала скачиваем архив с LDYOM. Это можно сделать в:
 
 1. ВК - https://vk.com/ldyom
-2. C Оф.сайта - https://mgeymer.github.io/LDYOM/
+2. C Оф.сайта - https://mgeymer.getechg.io/LDYOM/
 
 Разархивируйте папки ***GTA*** и ***MPACK***, всё из папки ***GTA*** переместите в директорию своей GTASA, а ***MPACK*** в *"...\Documents\GTA San Andreas User Files"*.
 
