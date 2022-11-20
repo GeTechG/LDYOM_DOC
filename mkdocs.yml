@@ -1,36 +1,49 @@
 site_name: LDYOM Docs
 
+nav:
+  - Русский:
+    - Индекс: /ru
+  - English:
+    - Index: /en
+
 theme:
   name: material
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: teal
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      primary: teal
+      accent: blue
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+  font:
+    text: Fira Sans
+    code: Fira Code
   language: en
 
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.tabbed
-  - pymdownx.snippets
-  - pymdownx.emoji
-  - pymdownx.magiclink
-  - pymdownx.inlinehilite
-  - pymdownx.highlight
-  - pymdownx.superfences
+plugins:
+  - search:
+      lang: 
+        - en
+        - ru
 
-extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
-  - javascripts/config.js
-extra_css:
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css
-
-nav:
-  - English:
-    - Overview : index.md
-    - Basics : 
-      - Install : en/Basics/install.md
-      - Simple mission : en/Basics/simple_mission.md
-  - Русский:
-    - Обзор : ru/index.md
-    - Основы : 
-      - Установка : ru/Basics/install.md
-      - Простая миссия : ru/Basics/simple_mission.md
-  - LCAPI:
-    - Opcodes: LCAPI/opcodes.md
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Русский
+      link: /ru/
+      lang: ru
