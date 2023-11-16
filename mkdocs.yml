@@ -1,10 +1,11 @@
 site_name: LDYOM Docs
+site_url: https://getechg.github.io/LDYOM_DOC/
 
 nav:
   - Русский:
-    - Индекс: /ru
+    - Индекс: ru
   - English:
-    - Index: /en
+    - Index: en
 
 theme:
   name: material
@@ -42,8 +43,8 @@ plugins:
 extra:
   alternate:
     - name: English
-      link: /en/
+      link: en
       lang: en
     - name: Русский
-      link: /ru/
+      link: ru
       lang: ru
